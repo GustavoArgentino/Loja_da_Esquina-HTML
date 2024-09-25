@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <header></header>
+
+    <section>
+        <img src="src/images/LOGO_BRANCO.png" alt="Logo Arte Viva" width="20%" height="20%">
+        <h1>Bem vindo!</h1>
+        <p>Para manter-se conectado, por favor realize seu login com suas credenciais.</p>
+        <input type="submit" value="Login"> 
+
+        <h1>Cadastre-se</h1>
+        <form action="formulario_cadastro" method="get">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" required>
+            <br>
+
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" required>
+            <br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+            <br>
+
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" required>
+            <br>
+
+            <input type="submit" value="Cadastrar"> 
+            <br>
+
+            <p>ou cadastre-se com</p>
+            <img src="src/images/google.png" alt="Google" width="3%" height="3%">
+            <img src="src/images/facebook.png" alt="Facebook" width="3%" height="3%">
+        </form>
+    </section>
+</body>
+</html>
