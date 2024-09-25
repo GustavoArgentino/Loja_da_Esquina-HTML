@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <header></header>
+
+    <section>
+        <h2>Login</h2>
+        <form action="tela_inicial" method="get"></form> <!--precisa pegar o endereço da tela de inicio-->
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+            <br>
+
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" required>
+            <br>
+
+            <label for="lembre_de_mim">Lembre de mim</label>
+            <input type="checkbox" name="lembre_de_mim" id="lembre_de_mim">
+
+            <p><a href="esqueci_senha">Esqueci minha senha</a></p> <!--precisa fazer a pagina de esqueci minha senha-->
+            <br>
+
+            <input type="submit" value="Entrar"> 
+            <input type="submit" value="Cadastre-se"> 
+
+            <p>ou faça login com</p>
+            <img src="src/images/google.png" alt="Google" width="4%" height="4%">
+            <img src="src/images/facebook.png" alt="Facebook" width="4%" height="4%">
+            <br>
+    </section>
+    
+</body>
+</html>
