@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Montserrat'; 
+    src: url(./src/font/montserrat/Montserrat-Regular.ttf); 
+}
+
 :root{
     --cor-primaria: #a02334;
     --cor-secundaria: #ffad60;
@@ -6,7 +11,7 @@
 }
 
 body{
-    font-family: Calibri;
+    font-family: Montserrat;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,7 +20,7 @@ body{
 header{
     color: #fff;
     background-color: var(--cor-primaria);
-    width: 26%;
+    width: 28%;
     height: 65vh;
     margin: 7% 0 0 15%;
     padding-top: 1.2rem;
@@ -29,21 +34,22 @@ header{
 }
 
 header img{
-    width: 50%;
+    width: 45%;
     margin-top: 1rem;
 }
 
 header h1{
     margin: 0;
-    margin-top: 1rem;
-    font-size: 3.9rem;
+    margin-top: 1.9rem;
+    font-size: 3.5rem;
     text-shadow: 0 0.2rem 1rem #741a26;
     
 }
 
 header p{
     margin: 0;
-    padding: 0 2rem 0 2rem;
+    padding: 0 1.5rem 0 1.5rem;
+    font-size: 0.9rem;
 }
 
 header input{
