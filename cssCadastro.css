@@ -29,11 +29,13 @@ header{
 }
 
 header img{
-    width: 60%;
+    width: 50%;
+    margin-top: 1rem;
 }
 
 header h1{
     margin: 0;
+    margin-top: 1rem;
     font-size: 3.9rem;
     text-shadow: 0 0.2rem 1rem #741a26;
     
