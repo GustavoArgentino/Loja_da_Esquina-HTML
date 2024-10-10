@@ -3,17 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./cssCadastro.css">
     <title>Cadastro</title>
 </head>
 <body>
-    <header></header>
+    <div class="container"></div>
+        <header>
+            <img src="src/images/LOGO_BRANCO.png" alt="Logo Arte Viva">
+            <h1>Bem vindo!</h1>
+            <p>Para manter-se conectado, por favor realize seu login com suas credenciais.</p>
+            <input type="submit" value="ENTRAR"> 
+        </header>
+    </div>
 
-    <section>
-        <img src="src/images/LOGO_BRANCO.png" alt="Logo Arte Viva" width="20%" height="20%">
-        <h1>Bem vindo!</h1>
-        <p>Para manter-se conectado, por favor realize seu login com suas credenciais.</p>
-        <input type="submit" value="Login"> 
-
+    <div class="cadastro">
+        <main>
         <h1>Cadastre-se</h1>
         <form action="formulario_cadastro" method="get">
             <label for="nome">Nome:</label>
@@ -33,12 +37,14 @@
             <br>
 
             <input type="submit" value="Cadastrar"> 
-            <br>
+            <br>    
 
             <p>ou cadastre-se com</p>
-            <img src="src/images/google.png" alt="Google" width="3%" height="3%">
-            <img src="src/images/facebook.png" alt="Facebook" width="3%" height="3%">
+            <img src="src/images/google.png" alt="Google">
+            <img src="src/images/facebook.png" alt="Facebook">
         </form>
-    </section>
+        </main>
+    </div>
+
 </body>
 </html>
