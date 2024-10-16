@@ -1,1 +1,0 @@
-# Loja_da_Esquina-HTML
