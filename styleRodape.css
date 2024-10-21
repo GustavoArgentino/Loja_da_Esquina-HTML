@@ -21,6 +21,7 @@ footer h4 {
 
 footer .icones {
     margin: 20px 0;
+    justify-content: center;    
 }
 
 footer .icones a {
