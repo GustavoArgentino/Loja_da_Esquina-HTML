@@ -1,55 +1,76 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Arte Viva - Loja de Artesanato</title>
+    <link rel="stylesheet" href="Loja.css">
 </head>
 <body>
     <header>
-        <img src="src/image/Logotipo.png" alt="" width="100px" height="100px"> 
-        <section>
-        <ul>
-            <nav>
-                <img src="src/image/lupa.png" alt="" width="15px" height="15px"><label for="Pesquisa">:</label> 
-                <input type="text" Pequisa="Pesquisa" placeholder="Pesquisa"> <br><br>
-                <li> <a href="">Carrinho</a></li>
-                <li> <a href="">Login</a></li>
-                <li> <a href="">Catálogo</a> </li>
-                <li> <a href="">Sobre nós</a></li>
-            </nav>
-        </ul>
-        </section> 
-    </header>    
+        <h1>Arte Viva</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#ofertas">Ofertas</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <section>
-        <h1>Bem-vindo ao Arte Viva!</h1>
-        <p>Descubra o mundo do artesanato feito à mão. Nossos produtos são criados com amor e dedicação, trazendo um toque especial para a sua vida.</p>
-        
-        <h2>Nossos Destaques</h2>
-        <div class="produto">
-            <h3>Produto 1</h3>
-            <p>Descrição do produto 1. Um artesanato único que traz elegância e charme.</p>
-            <span>Preço: R$ 50,00</span>
-        </div>
-        
-        <div class="produto">
-            <h3>Produto 2</h3>
-            <p>Descrição do produto 2. Feito com materiais de alta qualidade, perfeito para presentear.</p>
-            <span>Preço: R$ 75,00</span>
-        </div>
+    <main>
+        <section id="home">
+            <h2>Bem-vindo à Arte Viva!</h2>
+            <p>Descubra a beleza do artesanato feito à mão.</p>
+        </section>
 
-        <div class="produto">
-            <h3>Produto 3</h3>
-            <p>Descrição do produto 3. Adicione um toque especial à sua decoração com este artesanato.</p>
-            <span>Preço: R$ 40,00</span>
-        </div>
+        <section id="ofertas">
+            <h2>Principais Ofertas</h2>
+            <div class="ofertas">
+                <div class="oferta">
+                    <img src="porta.png" alt="" width="150px" height="150px">
+                    <h3>Porta-Retrato Artesanal</h3>
+                    <p>Desconto de 20%</p>
+                </div>
+                <div class="oferta">
+                    <img src="caneca.png" alt="">
+                    <h3>Conjunto de Canecas Pintadas</h3>
+                    <p>Leve 3 e pague 2!</p>
+                </div>
+                <div class="oferta">
+                    <img src="colar.png" alt="" width="150px"
+                    height="150px">
+                    <h3>Colar de Pérolas Naturais</h3>
+                    <p>Frete grátis!</p>
+                </div>
+                <div class="oferta">
+                    <img src="cena.png" alt="">
+                    <h3>Cesta de Vime Decorativa</h3>
+                    <p>10% de desconto na compra à vista</p>
+                </div>
+            </div>
+        </section>
 
-        <a href="#contato" class="btn">Entre em Contato</a>
-    </section>
+        <section id="produtos">
+            <h2>Nossos Produtos</h2>
+            <p>Explore nossa variedade de produtos artesanais.</p>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>Saiba mais sobre nossa missão e equipe.</p>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco para mais informações.</p>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; Todos os direitos reservados pela "Arte Viva"</p>
+        <p>&copy; 2024 Arte Viva. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
