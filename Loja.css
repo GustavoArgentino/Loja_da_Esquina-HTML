@@ -52,10 +52,50 @@ section {
 }
 
 footer {
-    background-color: #f4f4f4;
+    background-color: #D9D9D9;
+    color: #000;
+    padding: 30px 20px;
     text-align: center;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+}
+
+footer h4 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+footer .icones {
+    margin: 20px 0;
+    justify-content: center;    
+}
+
+footer .icones a {
+    color: #000;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+footer .icones a:hover {
+    color: #000;
+}
+
+footer .links {
+    margin: 20px 0;
+}
+
+footer .links a {
+    color: #000;
+    margin: 0 15px;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+footer .links a:hover {
+    color: #000;
+}
+
+footer p {
+    margin: 10px 0 0;
+    font-size: 14px;
 }
