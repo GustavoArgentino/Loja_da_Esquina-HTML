@@ -1,46 +1,90 @@
+<!--Gustavo-->
+
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="styleCompras.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header>
-        <img src="src/image/Logotipo.png" alt="" width="100px" height="100px"> 
-        <section>
-        <ul>
-            <nav>
-                <img src="src/image/lupa.png" alt="" width="15px" height="15px"><label for="Pesquisa">:</label> 
-                <input type="text" Pequisa="Pesquisa" placeholder="Pesquisa"> <br><br>
-                <li> <a href="">Carrinho</a></li>
-                <li> <a href="">Login</a></li>
-                <li> <a href="">Catálogo</a> </li>
-                <li> <a href="">Sobre nós</a></li>
-            </nav>
-        </ul>
-        </section> 
-    </header>    
+        <div class="logo">
+            <img src="src/image/Logotipo.png" alt="Logo">
+        </div>
+        <div class="barra-pesquisa">
+            <form action="#" method="get">
+                <img src="src/image/lupa.png" alt="Buscar">
+                <input type="text" name="Pesquisa" placeholder="Pesquisar...">
+            </form>
+        </div>
+        <nav>
+            <a href="#">Login</a>
+            <a href="#">Catálogo</a>
+            <a href="#">Sobre nós</a>
+        </nav>
+        <div class="icones">
+            <a href="#" class="icon"><i class="fas fa-shopping-cart"></i></a>
+            <a href="#" class="icon"><i class="fas fa-user-plus"></i></a>
+        </div>
+    </header>
 
-    <section>
-        <img src="src/image/VasoGato.png" alt="Imagem gato" width="20%" height="20%">  <p>Vaso de Gato</p> <p>prazo de entrega: 15/09/2024  
-            até
-             09/10/2024</p>
-             <p>< 0 > - < 1000 > unidade: R$: 20,00</p>
-             <p> quantidade (-) 1 (+)</p>
-           <br><br>
-           <img src="src/image/VasoCeramica.png" alt="Imagem de copo" width="20%" height="20%">
-           <p>Vaso de cerâmica </p>
-           <p>prazo de entrega:20/09/2024
-             até
-             09/10/2024</p>
-             <p>< 0 > - < 100 > unidade: R$: 70,00</p>
-             <p>quantidade (-) 1 (+)</p>
-          
+    <div class="barra-separacao"></div>
+
+    <section class="seção-carrinho">
+        <div class="area-carrinho">
+            <h3>Seu Carrinho</h3>
+            <p>Nenhum produto adicionado.</p>
+        </div>
+        <div class="area-resumo">
+            <h4>Resumo da Compra</h4>
+            <div class="detalhes-resumo">
+                <div class="detalhes">
+                    <span>Subtotal</span>
+                    <span>R$ 0,00</span>
+                </div>
+                <div class="detalhes">
+                    <span>Cupom de Desconto</span>
+                    <input type="text" placeholder="Insira seu cupom">
+                </div>
+                <div class="detalhes">
+                    <span>Frete</span>
+                    <span>Calcular</span>
+                </div>
+                <div class="total">
+                    <strong>Total</strong>
+                    <strong>R$ 0,00</strong>
+                </div>
+            </div>
+            <button class="btn-finalizar">Finalizar Compra</button>
+            <a href="#" class="btn-continuar">Continuar Comprando</a>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; Todos os direitos reservados pela "Arte Viva"</p>
+        <h4>Sobre Nós</h4>
+        <p>Arte Viva é uma loja dedicada a celebrar a criatividade e a beleza do artesanato. Aqui, você encontrará peças
+            únicas feitas à mão, que refletem talento e paixão. Explore nossa coleção e leve para casa um pedacinho de
+            arte!</p>
+        <div class="icones">
+            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-pinterest-p"></i></a>
+        </div>
+        <div class="links">
+            <a href="#">Termos de Serviço</a>
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Contato</a>
+        </div>
+        <p>&copy; 2024 Arte Viva. Todos os direitos reservados.</p>
     </footer>
 </body>
+
 </html>
