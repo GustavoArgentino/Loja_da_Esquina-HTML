@@ -24,6 +24,7 @@ body {
 }
 
 h2 {
+    margin: 2rem;
     font-size: 50px;
     display: flex;
     justify-content: center;
@@ -31,9 +32,10 @@ h2 {
 
 section {
     background-color: var(--cor-primaria);
-    padding: 1rem;
-    border-radius: 3rem;
+    padding: 1rem 1rem 2rem 1rem;
+    border-radius: 5rem;
     box-shadow: 0.5rem 0 2rem #767676;
+    width: 30%;
 }
 
 form {
@@ -65,10 +67,80 @@ input {
     margin: 0 1rem;
 }
 
-.linhas{
+.linhas {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
 }
+
+.email,
+.senha {
+    margin-left: 3rem;
+    margin-bottom: 0.3rem;
+    align-self: flex-start;
+}
+
+#email,
+#senha {
+    width: 67%;
+}
+
+.entrar-cadastrar {
+    margin-top: 1rem;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cadastrar{
+    transition: transform 0.3s ease;
+}
+
+.cadastrar:hover{
+    transform: translateY(-5px);
+}
+
+.entrar{
+    transition: transform 0.3s ease;
+}
+
+.entrar:hover{
+    transform: translateY(-5px);
+}
+
+.cadastrar {
+    width: 60%;
+}
+
+.entrar {
+    width: 35%;
+    background-color: var(--cor-secundaria);
+    color: white;
+}
+
+.ou {
+    margin: 2rem 0;
+}
+
+.esqueci{
+    color: white;
+    text-decoration: none;
+}
+
+.esqueci:hover{
+    padding-bottom: 4px;
+    border-bottom: 2px solid white;
+}
+
 
 img {
     width: 15%;
     padding: 0 1rem;
+    transition: transform 0.3s ease;
 }
+
+img:hover{
+    transform: translateY(-5px);
+}
+

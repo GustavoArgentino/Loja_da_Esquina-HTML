@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -12,32 +15,32 @@
     <header></header>
 
     <section>
-        <h2>Login</h2>
+        <h2>LOGIN</h2>
         <form action="tela_inicial" method="get"> <!--precisa pegar o endereço da tela de inicio-->
-
-            <label for="email">Email:</label>
-            <br>
+            <div class="email">
+                <label for="email">Email:</label>
+            </div>
             <input type="email" name="email" id="email" required>
             <br>
-
-            <label for="senha">Senha:</label>
-            <br>
+            <label class="senha" for="senha">Senha:</label>
             <input type="password" name="senha" id="senha" required>
-            <br>
-            <article class="linhas">
-                <input type="checkbox" name="lembre_de_mim" id="lembre_de_mim">
-                <label for="lembre_de_mim">Lembre de mim</label>
 
-                <p><a href="esqueci_senha">Esqueci minha senha</a></p>
+            <article class="linhas">
+                <div>
+                    <input type="checkbox" name="lembre_de_mim" id="lembre_de_mim">
+                    <label for="lembre_de_mim">Lembre de mim</label>
+                </div>
+
+                <p><a class="esqueci" href="esqueci_senha">Esqueci minha senha</a></p>
                 <!--precisa fazer a pagina de esqueci minha senha-->
             </article>
 
-            <article>
-                <input class="entrar-cadastrar" type="submit" value="Entrar">
-                <input class="entrar-cadastrar"  type="submit" value="Cadastre-se">
+            <article class="entrar-cadastrar">
+                <input class="entrar" type="submit" value="Entrar">
+                <input class="cadastrar" type="submit" value="Cadastre-se">
             </article>
 
-            <p>ou faça login com</p>
+            <p class="ou">ou faça login com</p>
             <article>
                 <img src="src/images/google.png" alt="Google">
                 <img src="src/images/facebook.png" alt="Facebook">
