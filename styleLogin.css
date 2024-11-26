@@ -32,9 +32,10 @@ h2 {
 
 section {
     background-color: var(--cor-primaria);
-    padding: 1rem;
-    border-radius: 3rem;
+    padding: 1rem 1rem 2rem 1rem;
+    border-radius: 5rem;
     box-shadow: 0.5rem 0 2rem #767676;
+    width: 30%;
 }
 
 form {
@@ -141,9 +142,4 @@ img {
 
 img:hover{
     transform: translateY(-5px);
-}
-
-img {
-    width: 15%;
-    padding: 0 1rem;
 }
