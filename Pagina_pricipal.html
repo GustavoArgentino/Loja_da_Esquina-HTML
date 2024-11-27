@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arte Viva - Loja de Artesanato</title>
-    <link rel="stylesheet" href="Loja.css">
+    <link rel="stylesheet" href="./pagina_principal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
 </head>
 <body>
     <header>
         <div class="logo">
+            <a href="./Pagina_pricipal.html">
             <img src="src/image/Logotipo.png" alt="Logo">
+            </a>
         </div>
         <div class="barra-pesquisa">
             <form action="#" method="get">
@@ -29,7 +32,6 @@
         </div>
     </header>
     <div class="barra-separacao"></div>
-
    <main>
         <section id="home">
             <h2>Bem-vindo à Arte Viva!</h2>
@@ -40,29 +42,28 @@
             <h2>Principais Ofertas</h2>
             <div class="ofertas">
                 <div class="oferta">
-                    <img src="src/image/VasoGato.png" alt="" width="150px" height="150px">
-                    <h3>Vaso de flor, com formato de gato</h3>
-                    <p>Desconto de 20%</p>
-                    <button class="add-to-cart"> <a href="./Compras.html"></a> Adicionar ao Carrinho</button>
+                    <img class="product-image" src="src/image/VasoGato.png" >
+                    <h3 class="product-title">Vaso de flor</h3>
+                    <span class="product-price">R$29,99</span>
+                    <button type="button" class="add-to-cart">Adicionar ao Carrinho</button>
                 </div>
                 <div class="oferta">
-                    <img src="src/image/caneca.png" alt="">
-                    <h3>Conjunto de Canecas Pintadas</h3>
-                    <p>Leve 3 e pague 2!</p>
-                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                    <img class="product-image" src="src/image/caneca.png" >
+                    <h3 class="product-title">Conjunto de Canecas Pintadas</h3>
+                    <span class="product-price">R$29,99</span>
+                    <button type="button" class="add-to-cart">Adicionar ao Carrinho</button>
                 </div>
                 <div class="oferta">
-                    <img src="src/image/colar.png" alt="" width="150px"
-                    height="150px">
-                    <h3>Colar de Pérolas Naturais</h3>
-                    <p>Frete grátis!</p>
-                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                    <img class="product-image" src="src/image/colar.png" >
+                    <h3 class="product-title">Colar de Pérolas Naturais</h3>
+                    <span class="product-price">R$29,99</span>
+                    <button type="button" class="add-to-cart">Adicionar ao Carrinho</button>
                 </div>
                 <div class="oferta">
-                    <img src="src/image/cena.png" alt="">
-                    <h3>Cesta de Vime Decorativa</h3>
-                    <p>10% de desconto na compra à vista</p>
-                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                    <img class="product-image" src="src/image/cena.png" >
+                    <h3 class="product-title">Cesta de Vime Decorativa</h3>
+                    <span class="product-price">R$29,99</span>
+                    <button type="button" class="add-to-cart">Adicionar ao Carrinho</button>
                 </div>
             </div>
         </section>
@@ -99,5 +100,6 @@
         </div>
         <p>&copy; 2024 Arte Viva. Todos os direitos reservados.</p>
     </footer>
+    <script src="./pagina_principal.js"></script>
 </body>
 </html>
