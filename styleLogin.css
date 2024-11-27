@@ -23,6 +23,26 @@ body {
     align-items: center;
 }
 
+.imagem_fundo {
+    position: fixed;
+    /* Fixa a imagem no fundo */
+    top: 0;
+    /* Alinha ao topo */
+    left: 0;
+    /* Alinha à esquerda */
+    width: 100%;
+    /* Preenche toda a largura da tela */
+    height: 100%;
+    /* Preenche toda a altura da tela */
+    object-fit: cover;
+    /* Faz a imagem cobrir a área sem distorção */
+    z-index: -1;
+    /* Coloca a imagem atrás de outros elementos */
+    opacity: 40%;
+    filter: blur(2px)
+}
+
+
 h2 {
     margin: 2rem;
     font-size: 50px;
