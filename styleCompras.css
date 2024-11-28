@@ -157,6 +157,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
+/* Começo do Rodapé*/
 footer {
     background-color: #D9D9D9;
     color: #000;
@@ -205,4 +206,125 @@ footer .links a:hover {
 footer p {
     margin: 10px 0 0;
     font-size: 14px;
+}/* Fim do Rodapé*/
+
+
+/*Essa parte é a que da estilo para a area do carrinho*/
+/* Estilo geral da seção do carrinho */
+.seção-carrinho {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.seção-carrinho h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Estilo da área que lista os produtos */
+.area-carrinho {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Estilo do produto dentro do carrinho */
+.produto-no-carrinho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.produto-no-carrinho img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.produto-no-carrinho .product-title {
+    flex-grow: 1;
+    font-size: 1.1em;
+    color: #555;
+    margin-left: 20px;
+}
+
+.produto-no-carrinho .product-price {
+    font-size: 1.2em;
+    color: #333;
+    margin-right: 20px;
+}
+
+.produto-no-carrinho .remove-from-cart {
+    padding: 5px 10px;
+    background-color: #ff4c4c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.produto-no-carrinho .remove-from-cart:hover {
+    background-color: #e43b3b;
+}
+
+/* Estilo da área do total,ou seja, preco a ser calculado */
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #333;
+}
+
+.total strong:last-child {
+    color: #2c7d2d; /* Cor verde para o total */
+}
+
+/* Estilo para quando o carrinho estiver vazio */
+.seção-carrinho .area-carrinho p {
+    font-size: 1.2em;
+    color: #888;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Css para a pagina ser responsiva */
+@media (max-width: 768px) {
+    .seção-carrinho {
+        width: 90%;
+    }
+
+    .produto-no-carrinho {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .produto-no-carrinho .product-title {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .produto-no-carrinho .product-price {
+        margin-top: 10px;
+    }
+
+    .produto-no-carrinho img {
+        width: 80px;
+        height: 80px;
+    }
 }
