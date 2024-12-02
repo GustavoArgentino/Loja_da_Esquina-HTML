@@ -42,6 +42,24 @@ body {
     filter: blur(2px)
 }
 
+.home {
+    text-decoration: none;
+    color: #094f28;
+    position: fixed;
+    top: 1.4rem;
+    box-shadow: 0rem 0 1rem #767676;
+    padding: 0.7rem 1.5rem;
+    border-radius: 10px;
+    background-color: var(--cor-quaternaria);
+    transition: transform 0.3s ease;
+    z-index: 1000; /* Opcional: para garantir que o elemento fique sobreposto a outros */
+}
+
+/* Efeito de hover diretamente na classe .home (no link em si) */
+.home:hover {
+    transform: translateY(-5px);
+}
+
 
 h2 {
     margin: 2rem;
@@ -51,6 +69,7 @@ h2 {
 }
 
 section {
+    margin-top: 2rem;
     background-color: var(--cor-primaria);
     padding: 1rem 1rem 2rem 1rem;
     border-radius: 5rem;
@@ -81,6 +100,30 @@ input {
     border: none;
     border-radius: 0.8rem;
     box-shadow: 0 0.2rem 1rem #c08044;
+}
+
+#senha,
+#email {
+    background-color: white;
+    border: 2px solid transparent;
+    transition: border-color 0.9s ease;
+    transition: background-color 0.9s ease;
+}
+
+#email:focus {
+    outline: none;
+    /* Remove o contorno padrão */
+    border: 2px solid #ffc4cd;
+    /* Muda a cor da borda quando focado */
+    background-color: #ffeaed;
+}
+
+#senha:focus {
+    outline: none;
+    /* Remove o contorno padrão */
+    border: 2px solid #ffc4cd;
+    /* Muda a cor da borda quando focado */
+    background-color: #ffeaed;
 }
 
 .entrar-cadastrar {
@@ -114,6 +157,16 @@ input {
 }
 
 .cadastrar{
+    text-decoration: none;
+    text-align: center;
+    font-size: 1em;
+    width: 40%;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    padding: 0.7rem 1.9rem;
+    border: none;
+    border-radius: 0.8rem;
+    box-shadow: 0 0.2rem 1rem #c08044;
     transition: transform 0.3s ease;
 }
 
@@ -129,30 +182,19 @@ input {
     transform: translateY(-5px);
 }
 
-.cadastrar {
-    width: 60%;
-}
-
-.entrar {
-    width: 35%;
-    background-color: var(--cor-secundaria);
-    color: white;
-}
-
 .ou {
     margin: 2rem 0;
 }
 
-.esqueci{
+.esqueci {
     color: white;
     text-decoration: none;
 }
 
-.esqueci:hover{
+.esqueci:hover {
     padding-bottom: 4px;
     border-bottom: 2px solid white;
 }
-
 
 img {
     width: 15%;
