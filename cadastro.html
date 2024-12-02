@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./cssCadastro.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <img class="imagem_fundo" src="./src/images/fundo_cadastro.jpg" alt="fundo">
+    <header>
+        <img src="src/images/branco.png" alt="Logo Arte Viva">
+        <h1>Bem vindo!</h1>
+        <p>Para manter-se conectado, por favor realize seu login com suas credenciais.</p>
+        <input class="entrar" type="submit" value="Entrar">
+    </header>
+
+    <section class="cadastro">
+        <h1 id="h1">Cadastre-se</h1>
+        <form action="formulario_cadastro" method="get">
+            <div class="campos">
+                <article class="nome-sobrenome">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" required>
+
+
+                    <label class="sobrenome" for="sobrenome">Sobrenome:</label>
+                    <input type="text" name="sobrenome" required>
+                </article>
+
+                <article>
+                    <label class="email" for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                </article>
+
+                <article>
+
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" id="senha" required>
+                </article>
+            </div>
+            <input id="input" type="submit" value="Cadastrar">
+            <br> <!-- COMENTÁRIO TESTE-->
+
+            <div class="outra-opcao">
+                <p>ou cadastre-se com</p>
+                <img src="src/images/google.png" alt="Google">
+                <img src="src/images/facebook.png" alt="Facebook">
+            </div>
+        </form>
+        </main>
+    </section>
+
+</body>
+
+</html>
