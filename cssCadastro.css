@@ -1,0 +1,205 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(./src/font/montserrat/Montserrat-Regular.ttf);
+}
+
+:root {
+    --cor-primaria: #a02334;
+    --cor-secundaria: #ffad60;
+    --cor-terciaria: #ffeead;
+    --cor-quaternaria: #96CEB4;
+}
+/*  */
+body {
+    font-family: Montserrat;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem_fundo {
+    position: fixed;
+    /* Fixa a imagem no fundo */
+    top: 0;
+    /* Alinha ao topo */
+    left: 0;
+    /* Alinha à esquerda */
+    width: 100%;
+    /* Preenche toda a largura da tela */
+    height: 100%;
+    /* Preenche toda a altura da tela */
+    object-fit: cover;
+    /* Faz a imagem cobrir a área sem distorção */
+    z-index: -1;
+    /* Coloca a imagem atrás de outros elementos */
+    opacity: 40%;
+    filter: blur(2px)
+}
+
+header {
+    color: #fff;
+    background-color: var(--cor-primaria);
+    width: 28%;
+    height: 65vh;
+    padding-top: 1.2rem;
+    border-radius: 3.5rem;
+    text-align: center;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+header img {
+    width: 45%;
+    margin-top: 1rem;
+    transition: opacity 0.5s ease;
+    /* Transição suave para opacidade */
+}
+
+header img:hover {
+    opacity: 0.7;
+    /* Torna a imagem original invisível ao passar o mouse */
+}
+
+header h1 {
+    margin: 0;
+    margin-top: 1.9rem;
+    font-size: 3.5rem;
+    text-shadow: 0 0.2rem 0.8rem #621620;
+}
+
+header p {
+    margin: 0;
+    padding: 0 1.5rem 0 1.5rem;
+    font-size: 0.9rem;
+}
+
+header .entrar {
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    margin-top: 1.5rem;
+    padding: 0.6rem 1.8rem;
+    border: none;
+    border-radius: 0.8rem;
+    box-shadow: 0 0.2rem 1rem #741a26;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
+}
+
+.entrar{
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.entrar:hover {
+    transform: translateY(-5px);
+    /* Move o botão para cima 5 pixels */
+}
+
+
+section {
+    color: #fff;
+    background-color: var(--cor-secundaria);
+    height: 65vh;
+    width: 47vw;
+    padding-left: 10rem;
+    padding-top: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0.5rem 0 2rem #767676;
+    text-align: center;
+    box-sizing: border-box;
+    margin-left: -15%;
+}
+
+
+#h1 {
+    text-shadow: 0 0.2rem 0.3rem #c08044;
+    padding-left: 5.2rem;
+    font-size: 3em;
+}
+
+form {
+    padding-left: 4.5rem;
+}
+
+article {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    text-align: start;
+}
+
+.campos {
+    width: 95%;
+    justify-content: space-around;
+
+}
+
+.campos label {
+    padding-inline: 0.9rem;
+}
+
+.campos .email {
+    padding-inline: 1.02rem;
+}
+
+
+.campos input {
+    height: 3.2vh;
+    width: 100%;
+    border-radius: 0.3rem;
+    border: 2px solid transparent;
+    transition: border-color 0.9s ease;
+    transition: background-color 0.9s ease;
+    /* Adiciona uma transição suave */
+}
+
+.campos input:focus {
+    outline: none;
+    /* Remove o contorno padrão */
+    border: 2px solid #ffc4cd;
+    /* Muda a cor da borda quando focado */
+    background-color: #ffeaed;
+}
+
+.sobrenome {
+    margin-left: 1rem;
+}
+
+section img {
+    width: 12%;
+    padding: 0.6rem;
+    transition: transform 0.3s ease;
+    /* Adiciona uma transição suave */
+}
+
+section img:hover {
+    transform: translateY(-5px);
+    /* Move a imagem para cima 5 pixels */
+}
+
+#input {
+    font-size: 1em;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+    padding: 0.7rem 1.9rem;
+    border: none;
+    border-radius: 0.8rem;
+    box-shadow: 0 0.2rem 1rem #c08044;
+    transition: transform 0.3s ease;
+}
+
+#input:hover {
+    transform: translateY(-5px);
+    /* Move o botão para cima 5 pixels */
+}
+
+.outra-opcao {
+    margin-left: 2rem;
+}
