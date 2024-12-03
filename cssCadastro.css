@@ -78,24 +78,16 @@ header p {
     font-size: 0.9rem;
 }
 
-header .entrar {
+/* Estilo para o link ou botão */
+.entrar {
     color: var(--cor-primaria);
     background-color: var(--cor-terciaria);
     padding: 0.6rem 1.8rem;
     border: none;
     border-radius: 0.8rem;
     box-shadow: 0 0.2rem 1rem #741a26;
-    transition: transform 0.3s ease;
-    transition: transform 0.3s ease;
-}
-
-.entrar{
     text-decoration: none;
     font-size: 1rem;
-}
-
-.entrar:hover {
-    transform: translateY(-5px);
 }
 
 
