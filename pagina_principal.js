@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
+    
+    // Função de adicionar o produto ao carrinho
     function Adicionar() {
         const adicionarAoCarrinho = document.getElementsByClassName("add-to-cart");
         for (let i = 0; i < adicionarAoCarrinho.length; i++) {
@@ -17,7 +19,7 @@ function addProductToCart(event) {
     const productTitle = productElement.querySelector('.product-title').innerText;
     const productPrice = productElement.querySelector('.product-price').innerText;
 
-    // Criando um objeto do produto
+    // Criando um produto
     const product = {
         image: productImage,
         title: productTitle,
@@ -30,15 +32,17 @@ function addProductToCart(event) {
     const produtoJaExiste = cart.findIndex(item => item.title === product.title && item.price === product.price);
 
     if (produtoJaExiste !== -1) {
-        // Se o produto já existe, aumenta a quantidade
+        // Se o produto já existe aumenta a quantidade
         cart[produtoJaExiste].quantity += 1;
     } else {
-        // Se o produto não existe, adiciona com quantidade 1
+        // Se o produto não existe adiciona com quantidade 1
         product.quantity = 1;
-        cart.push(product);
+        cart.push(product); 
     }
 
-    // Salvando o carrinho de volta no localStorage
+
+    
+    // Salva o carrinho de volta no localStorage
     localStorage.setItem("cart", JSON.stringify(cart));
 
     alert("Produto adicionado ao carrinho");
