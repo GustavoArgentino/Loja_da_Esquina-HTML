@@ -1,9 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Parte responsavel por ver os produtos salvos no localstorage
     const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
 
     if (cart.length === 0) {
         document.querySelector('.seção-carrinho .area-carrinho p').innerHTML = "Nenhum produto adicionado";
     } else {
+
+        // Card criado dentro do carrinho para a exibição dos produtos
         const cartArea = document.querySelector('.seção-carrinho .area-carrinho');
         cartArea.innerHTML = '<h3>Seu Carrinho</h3>';
         
@@ -22,14 +26,16 @@ document.addEventListener('DOMContentLoaded', function() {
             cartArea.appendChild(productDiv);
         });
 
+        // Parte que calcula o total, essa parte que estava errada, porque eu n coloquei o preço para multiplicar com a quantidade
         const total = cart.reduce((acc, product) => {
             const price = parseFloat(product.price.replace('R$', '').trim());
-            return acc + price;
+            return acc + price * product.quantity;
         }, 0);
 
         document.querySelector('.seção-carrinho .total strong:last-child').innerText = `R$ ${total.toFixed(2)}`;
     }
 
+    // Botão de remoção dos produtos
     document.querySelectorAll('.remove-from-cart').forEach(button => {
         button.addEventListener('click', function() {
             const index = button.getAttribute('data-index');  // Pega o índice do produto a ser removido
@@ -40,12 +46,16 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Função que calcula o total do carrinho
+    // Função que calcula o total do carrinho após a remoção de algum produto
     function updateTotal() {
         const total = cart.reduce((acc, product) => {
             const price = parseFloat(product.price.replace('R$', '').trim());
-            return acc + price;
+            
+            return acc + (product.quantity * price);
+
         }, 0);
-        document.querySelector('.seção-carrinho .total strong:last-child').innerText = `R$ ${total.toFixed(2)}`;
+        document.querySelector('.seção-carrinho .total strong:last-child').innerText = `R$ ${total}`;
+        // acc é a abreviação de "acumulação"
+        // Parseflote converte para um numero
     }
 });
