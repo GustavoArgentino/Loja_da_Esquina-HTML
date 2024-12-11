@@ -26,7 +26,7 @@ function addProductToCart(event) {
         price: productPrice
     };
 
-    // Obtendo os produtos do carrinho no localStorage
+    // Obtendo os produtos do carrinho que estão no localstorage
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
     const produtoJaExiste = cart.findIndex(item => item.title === product.title && item.price === product.price);
@@ -56,7 +56,7 @@ function addProductToCart(event) {
 
  // O "getItem("cart")" recupera o carrinho armazenado na storage, e caso esteja vazio utilizamos o "|| []" para iniciar com um array vazio.
 
- // Usaamos o "closest()"" para pegar o contêiner da oferta, sem necessariamente depender da extrutura exata do DOM.
+ // Usaamos o "closest()"" para pegar o contêiner da oferta, sem necessariamente depender da extrutura exata do DOM porque ele pega o elemento mais proximo que tem a classe .oferta.
 
- // O "querySelector()", pega o elemento diretamente dentro do container da oferta.
+ // O "querySelector()", pega as informações de dentro do container encontrado, e coloquei para armazenar em variaveis.
 
