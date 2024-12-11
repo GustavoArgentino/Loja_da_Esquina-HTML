@@ -1,3 +1,4 @@
+// Isso garante que o codigo dentro dessa função só sera executado quando o DOM estiver totalmente carregado.
 document.addEventListener('DOMContentLoaded', function() {
     // Parte responsavel por ver os produtos salvos no localstorage
     const cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -21,12 +22,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 <span class="product-price">${product.price}</span>
                 <span class="product-quantity">Quantidade: ${product.quantity}</span>
                 <button class="remove-from-cart" data-index="${index}">Remover</button>
-            `;
+            `;// O data-index vai ser utilizado em seguida para a remoção dos itens do carrinho
             
             cartArea.appendChild(productDiv);
         });
 
         // Parte que calcula o total, essa parte que estava errada, porque eu n coloquei o preço para multiplicar com a quantidade
+        // O reduce percorre todos os preços no carrinho e acumula o valor total
         const total = cart.reduce((acc, product) => {
             const price = parseFloat(product.price.replace('R$', '').trim());
             return acc + price * product.quantity;
@@ -57,5 +59,6 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelector('.seção-carrinho .total strong:last-child').innerText = `R$ ${total}`;
         // acc é a abreviação de "acumulação"
         // Parseflote converte para um numero
+        // Mesma lógica que calcula o total
     }
 });
